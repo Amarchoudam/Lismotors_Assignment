@@ -1,0 +1,52 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.button-container {
+    display: flex;
+    align-items:center; /* Align items at the top if flex items are of different height */
+}
+
+button {
+    display: block; /* Make buttons block-level for full width */
+    width: 120px; /* Set button width */
+    height: 30px; /* Set button height */
+    margin-bottom: 5px; /* Space between buttons */
+    cursor: pointer;
+    margin:15px;
+}
+
+.sub-buttons {
+    display: none; /* Initially hide sub-buttons */
+    flex-direction: column; 
+    position: relative;/* Stack sub-buttons vertically */
+    padding-left: 20px;
+     /* Creates space between the main button and sub-buttons */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style for showing the div */
+.shown {
+    display: flex; /* Show sub-buttons, respecting the flex direction */
+}
+.sub-buttons button {
+    margin-bottom: 10px; /* Increase space between sub-buttons */
+    /* Add other styling here as needed */
+}
+#hoverImage{
+    display: none;
+}
+#onlineButton:hover + #hoverImage {
+    display:block; /* Show the image when hovering over the button */
+}
+.button-img-wrapper:hover #hoverImage {
+    display: block; /* Show the image */
+}

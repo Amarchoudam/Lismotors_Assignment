@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <ul id="buttonList">
+        <li>
+            <div class="button-container">
+                <button onclick="toggleButtons('Research')" style="background-color: #2a4494; color: white;border: none;">Research</button>
+                <div id="Research" class="hidden sub-buttons">
+                    <div class="button-container" >
+                        <button onclick="toggleButtons('External')" style="background-color: #2a4494; color: white;border: none;">External</button>
+                    <div id="External" class="hidden sub-buttons" >
+                        <div class="button-container">
+                            <button onclick="toggleButtons('B2C')" style="background-color: #2a4494; color: white;border: none;">B2C</button>
+                            <div id="B2C" class="hidden sub-buttons">
+                                <div class="button-img-wrapper" style="position: relative; display: inline-block;">
+                                    <button id="onlineButton" style="background-color: #2a4494; color: white; border: none;">Online</button>
+                                    <!-- Initially hidden image, positioned relative to the button -->
+                                    <img id="hoverImage" src="hover.jpg" alt="Hover Image" style="width: 100px; height: 100px; position: absolute; right:-95px; top:10px;">
+                                </div>
+                                <button style="background-color: #2a4494; color: white; border: none;">Interview</button>
+                                <button style="background-color: #2a4494; color: white; border: none;">Public Data</button>
+                                <button style="background-color: #2a4494; color: white; border: none;">Health</button>
+                            </div>
+                        </div>
+                        <button style="background-color: #2a4494; color: white;border: none;">B2C</button>
+                    </div>
+                    </div>
+                    <button style="background-color: #2a4494; color: white;border: none;">Internal</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="button-container">
+                <button onclick="toggleButtons('Planning')" style="background-color: #82b3e8;border: none;">Planning</button>
+                <div id="Planning" class="hidden sub-buttons">
+                    <button style="background-color: #82b3e8;border: none;">PRD</button>
+                    <button style="background-color: #82b3e8;border: none;">Specs</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="button-container">
+                <button onclick="toggleButtons('Desiging')" style="background-color: #E96343;border: none;">Desiging</button>
+                <div id="Desiging" class="hidden sub-buttons">
+                    <button style="background-color: #E96343;border: none;">Hardware</button>
+                    <button style="background-color: #E96343;border: none;">Software</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="button-container">
+                <button onclick="toggleButtons('Manufacturing')" style="background-color: #E8919D;border: none;">Manufacturing</button>
+                <div id="Manufacturing" class="hidden sub-buttons">
+                    <button style="background-color: #E8919D;border: none;">Material</button>
+                    <button style="background-color: #E8919D;border: none;">Production</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="button-container">
+                <button onclick="toggleButtons('Sales/Marketing')" style="background-color: #A684EB;border: none;">Sales/Marketing</button>
+                <div id="Sales/Marketing" class="hidden sub-buttons">
+                    <button style="background-color: #A684EB;border: none;">Online</button>
+                    <button style="background-color: #A684EB;border: none;">Dealearship</button>
+                </div>
+            </div>
+        </li>
+    </ul>    
+
+<script src="script.js"></script>
+</body>
+</html>
